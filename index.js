@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 //ruta autenticación
 app.use('/api/user', auth);
-app.use('api/horarios', horarios);
+app.use('/api/horarios', horarios);
 
 
 const PORT = process.env.PORT || 3000
